@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=APP2
+Exec=/home/nikhil/app2/test_app.sh
+Terminal=true
+Icon=/home/nikhil/Downloads/krsh.png

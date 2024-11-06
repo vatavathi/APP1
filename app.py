@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # app.py
 from flask import Flask, request, send_file, render_template_string
 import pandas as pd
@@ -39,7 +39,7 @@ def upload_files():
 
         # Return the merged file for download
         return send_file(output_path, as_attachment=True)
-=======
+
 from flask import Flask, request, send_file, render_template_string, flash
 import pandas as pd
 import os
@@ -53,8 +53,8 @@ app.secret_key = 'supersecretkey'  # Required for flashing messages
 html = """
 <!doctype html>
 <title>Upload Files</title>
-<h1>Upload CSV, Excel, or PDF Files</h1>
-<p>You can upload multiple files of type CSV, XLSX, or PDF</p>
+<h1>Welcome Pranav</h1>
+<p>Choose your files </p>
 <form method="post" enctype="multipart/form-data">
     <input type="file" name="files" multiple><br><br>
     <input type="submit" value="Upload and Merge">
@@ -129,7 +129,7 @@ def upload_files():
 
         # Return the merged file for download
         return send_file(output_path, as_attachment=True, download_name="merged_file.csv")
->>>>>>> cd121bb (app updated with any types of files)
+
 
     return render_template_string(html)
 
